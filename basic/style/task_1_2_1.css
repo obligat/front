@@ -65,12 +65,88 @@ thead, tfoot {
     background-color: beige;
 }
 
-tbody {
-    background-color: aliceblue;
-}
-
 article > aside > h2::before {
     content: '| ';
     color: beige;
     font-size: 58px;
+}
+
+form > table > tbody > tr > td:first-child {
+    text-align: right;
+}
+
+form > table {
+    border-spacing: 10px;
+    border: none;
+}
+
+input[type = "text"], input[type = "password"], textarea {
+    height: 24px;
+    border-radius: 2px;
+    padding: 3px;
+    border: 1px solid #C6C6C6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+}
+
+input[type = "text"]:hover, input[type = "password"]:hover, textarea:hover {
+    border: 1px solid #C6C6C6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    color: #333333;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+    outline: none; /* 讨人厌的默认 outline 蓝色轮廓*/
+}
+
+.tip {
+    color: #cccccc;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex > label {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex > label > input {
+    margin: 0 10px;
+}
+
+select {
+    width: 100px;
+    height: 30px;
+    outline: none;
+    background: white;
+    border-radius: 2px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="button"] {
+    user-select: none;
+    background-color: rgba(231, 201, 154, 0.5);
+    border: 1px solid rgba(231, 201, 154, 0.1);
+    border-radius: 5px;
+    height: 35px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 27px;
+    padding: 0 10px;
+}
+
+input[type="button"]:hover {
+    background-color: rgba(231, 201, 154, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+input[type="button"]:focus {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
 }

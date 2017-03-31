@@ -102,23 +102,45 @@
   <aside>
     <h2>aside title</h2>
     <form action="">
-      <p><label>input email address:</label><input type="text" placeholder="please input email address"></p>
-      <p>input correctly</p>
-      <p><label>password:</label><input type="password" placeholder="password"/></p>
-      <p>
-        <label>gender:</label>
-        <label>male<input type="radio" value="male"></label>
-        <label>female<input type="radio" value="female"></label>
-      </p>
-      <p>
-        <label> city:
-          <input type="checkbox" value="a">
-          <input type="checkbox" value="b">
-        </label>
-      </p>
-      <p>
-        <label>describe: <textarea cols="10" rows="3" placeholder="This is a text"></textarea></label>
-      </p>
+      <table>
+        <tr>
+          <td>input email address:</td>
+          <td><input type="text" placeholder="please input email address"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="tip">input correctly</td>
+        </tr>
+        <tr>
+          <td>password:</td>
+          <td><input type="password" placeholder="password"/></td>
+        </tr>
+        <tr>
+          <td>confirm password:</td>
+          <td><input type="password" placeholder="confirm password"/></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="tip">password is number or string made of 6~12 digit .</td>
+        </tr>
+        <tr>
+          <td>gender:</td>
+          <td class="flex"><label>male <input type="radio" name="gender" value="male"/>female <input type="radio" name="gender" value="female"/></label></td>
+        </tr>
+        <tr>
+          <td> city:</td>
+          <td>
+            <select name="" id="">
+              <option value="北京">北京</option>
+              <option value="成都">成都</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>describe:</td>
+          <td><textarea cols="30" rows="3" placeholder="This is a text"></textarea></td>
+        </tr>
+      </table>
     </form>
     <input type="button" value="submit">
   </aside>
