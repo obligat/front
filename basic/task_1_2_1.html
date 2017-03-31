@@ -2,20 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>html practise 1_1_1</title>
+  <title>task_1_2_1</title>
+  <link rel="stylesheet" href="style/task_1_2_1.css">
 </head>
 <body>
-<header>
-  <h1>网站一级标题</h1>
-  <nav>
-    <ul>
-      <li><a href="#">导航链接一</a></li>
-      <li><a href="#">导航链接二</a></li>
-      <li><a href="#">导航链接三</a></li>
-      <li><a href="#">导航链接四</a></li>
-    </ul>
-  </nav>
-</header>
 <article>
   <h1>诗歌</h1>
   <h2> 咏史·郁郁涧底松</h2>
@@ -43,37 +33,42 @@
   <h1>图片</h1>
   <div>
     <p>好看的图片</p>
-    <img src="images/IMG_0011.JPG" alt="" width="300px" height="200px"/>
+    <img src="images/IMG_0011.JPG" alt=""/>
   </div>
   <div>
     <p>好看的图片</p>
-    <img src="images/IMG_0011.JPG" alt="" width="300px" height="200px"/>
+    <img src="images/IMG_0011.JPG" alt=""/>
   </div>
   <div>
     <p>好看的图片</p>
-    <img src="images/IMG_0011.JPG" alt="" width="300px" height="200px"/>
+    <img src="images/IMG_0011.JPG" alt=""/>
   </div>
   <div>
     <p>好看的图片</p>
-    <img src="images/IMG_0011.JPG" alt="" width="300px" height="200px"/>
+    <img src="images/IMG_0011.JPG" alt=""/>
   </div>
   <div>
     <p>好看的图片</p>
-    <img src="images/IMG_0011.JPG" alt="" width="300px" height="200px"/>
+    <img src="images/IMG_0011.JPG" alt=""/>
   </div>
   <div>
     <p>好看的图片</p>
-    <img src="images/IMG_0011.JPG" alt="" width="300px" height="200px"/>
+    <img src="images/IMG_0011.JPG" alt=""/>
   </div>
   <div>
     <p>好看的图片</p>
-    <img src="images/IMG_0011.JPG" alt="" width="300px" height="200px"/>
+    <img src="images/IMG_0011.JPG" alt=""/>
   </div>
 </article>
 <article>
-  <h2>last article title</h2>
-  <address>author</address>
-  <time>time</time>
+  <h2>article title</h2>
+  <span>author</span>
+  <span>time</span>
+  <ul class="list">
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+  </ul>
   <table>
     <thead>
     <tr>
@@ -90,6 +85,10 @@
       <th>body</th>
       <th>body</th>
     </tr>
+    <tr>
+      <th>body</th>
+      <th>body</th>
+    </tr>
     </tbody>
     <tfoot>
     <tr>
@@ -98,28 +97,31 @@
     </tr>
     </tfoot>
   </table>
+</article>
+<article>
   <aside>
     <h2>aside title</h2>
-    <h3>aside sign up entry</h3>
     <form action="">
-      <label>input email address <input type="text" placeholder="please input email address"></label>
+      <p><label>input email address:</label><input type="text" placeholder="please input email address"></p>
       <p>input correctly</p>
-      <fieldset>
-        <legend>title</legend>
-        <label>password<input type="password" placeholder="password"/></label><br>
-        gender
+      <p><label>password:</label><input type="password" placeholder="password"/></p>
+      <p>
+        <label>gender:</label>
         <label>male<input type="radio" value="male"></label>
         <label>female<input type="radio" value="female"></label>
+      </p>
+      <p>
         <label> city:
           <input type="checkbox" value="a">
           <input type="checkbox" value="b">
         </label>
-        <label>describe <textarea cols="10" rows="3" placeholder="This is a text"></textarea></label>
-        <label><input type="button" value="submit"></label>
-      </fieldset>
+      </p>
+      <p>
+        <label>describe: <textarea cols="10" rows="3" placeholder="This is a text"></textarea></label>
+      </p>
     </form>
+    <input type="button" value="submit">
   </aside>
 </article>
-<footer>版权所有&copy;</footer>
 </body>
 </html>

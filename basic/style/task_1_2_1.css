@@ -1,0 +1,76 @@
+body {
+    background: #cccccc;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+article {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    -webkit-box-shadow: inset -2px -2px 5px darkgrey;
+    -moz-box-shadow: inset -2px -2px 5px darkgrey;
+    box-shadow: inset -2px -2px 5px darkgrey;
+}
+
+article:nth-child(1) {
+    text-align: center;
+}
+
+article:nth-child(2) li {
+    list-style: none;
+}
+
+article:nth-child(3) div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: inset 0 0 1px darkgrey;
+    width: 110px;
+    height: 130px;
+    padding: 5px 8px 10px 8px;
+    margin: 20px;
+}
+
+article:nth-child(3) div > img {
+    width: 110px;
+    height: 100px;
+}
+
+.list {
+    counter-reset: num;
+    list-style-type: none;
+}
+
+.list > li::before {
+    counter-increment: num;
+    content: counters(num, "") ". ";
+}
+
+.list > li::after {
+    content: counters(num, "");
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+}
+
+thead, tfoot {
+    background-color: beige;
+}
+
+tbody {
+    background-color: aliceblue;
+}
+
+article > aside > h2::before {
+    content: '| ';
+    color: beige;
+    font-size: 58px;
+}
