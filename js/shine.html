@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>shine</title>
+  <script>
+    var titleInit = document.title, isShine = true;
+    setInterval(function () {
+      var title = document.title;
+      if (isShine == true) {
+        if (/新/.test(title) == false) {
+          document.title = '【你有新消息】';
+        } else {
+          document.title = '【　　　　　】';
+        }
+      } else {
+        document.title = titleInit;
+      }
+    }, 500);
+    window.onfocus = function () {
+      isShine = false;
+    };
+    window.onblur = function () {
+      isShine = true;
+    };
+  </script>
 </head>
 <body>
-$END$
+
 </body>
 </html>
