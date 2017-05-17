@@ -2,9 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>font-height</title>
+  <script src="../jquery-3.2.0.js"></script>
+  <script>
+    $(function () {
+      var demo = $(".demo");
+      var $select = $('#select');
+      var em = $('em');
+      var h = demo.height();
+
+      em.html(h + 'px ');
+      $select.click(function () {
+        var options = $("option:checked", this).val();
+        demo.css('font-family', options);
+        h = demo.height();
+        em.html(h + 'px ')
+      })
+    })
+  </script>
+  <style>
+    * {
+      font-family: sans-serif;
+    }
+
+    .demo {
+      font-size: 100px;
+    }
+    
+    select{
+      height: 30px;
+      background: antiquewhite;
+      width: 100px;
+      outline:none;
+    }
+  </style>
 </head>
 <body>
-$END$
+<select id="select">
+  <option value="sans-serif">sans-serif</option>
+  <option value="monospace">monospace</option>
+  <option value="serif">serif</option>
+</select>
+<div class="demo">
+  look different font font is ?
+</div>
+<div class="result">font height is : <em></em></div>
 </body>
 </html>
